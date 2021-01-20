@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IT2-LA-p1d">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cat Detail View Controller-->
+        <scene sceneID="wUN-8W-llL">
+            <objects>
+                <viewController storyboardIdentifier="catDetailVc" id="IT2-LA-p1d" customClass="CatDetailViewController" customModule="Cats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xCc-Hs-mdp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubI-rP-jll">
+                                <rect key="frame" x="68" y="378" width="278" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="i6w-Y6-iOO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="wikipediaUrlButtonPressed:" destination="IT2-LA-p1d" eventType="touchUpInside" id="Bdz-3w-2qK"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="u04-KA-lFa">
+                                <rect key="frame" x="20" y="74" width="374" height="150"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bik-Bc-4fc">
+                                        <rect key="frame" x="0.0" y="0.0" width="107" height="150"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eKB-Qr-rwH">
+                                        <rect key="frame" x="112" y="0.0" width="128.5" height="150"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTo-7j-5Kh">
+                                                <rect key="frame" x="0.0" y="0.0" width="128.5" height="46.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperament:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="da6-vk-aVn">
+                                                <rect key="frame" x="0.0" y="51.5" width="128.5" height="47"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Energy Level:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfh-PD-MaW">
+                                                <rect key="frame" x="0.0" y="103.5" width="128.5" height="46.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xfF-lP-QF0">
+                                        <rect key="frame" x="245.5" y="0.0" width="128.5" height="150"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wk6-4j-NZB">
+                                                <rect key="frame" x="0.0" y="0.0" width="128.5" height="46.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="uVc-uk-3zX">
+                                                <rect key="frame" x="0.0" y="51.5" width="128.5" height="47"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vg7-5Y-5xY">
+                                                <rect key="frame" x="0.0" y="103.5" width="128.5" height="46.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="eKB-Qr-rwH" firstAttribute="width" secondItem="xfF-lP-QF0" secondAttribute="width" id="s7g-cF-NAq"/>
+                                    <constraint firstItem="eKB-Qr-rwH" firstAttribute="width" secondItem="bik-Bc-4fc" secondAttribute="width" multiplier="1.2" id="s8U-KF-i9k"/>
+                                    <constraint firstAttribute="height" constant="150" id="vs5-ly-l4B"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CPM-3i-Puv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="u04-KA-lFa" firstAttribute="leading" secondItem="CPM-3i-Puv" secondAttribute="leading" constant="20" id="48O-87-2Gc"/>
+                            <constraint firstItem="u04-KA-lFa" firstAttribute="top" secondItem="CPM-3i-Puv" secondAttribute="top" constant="30" id="7JQ-KW-jGS"/>
+                            <constraint firstItem="ubI-rP-jll" firstAttribute="centerY" secondItem="xCc-Hs-mdp" secondAttribute="centerY" constant="-50" id="Oax-bC-S4s"/>
+                            <constraint firstAttribute="trailing" secondItem="u04-KA-lFa" secondAttribute="trailing" constant="20" id="ROF-Ap-VYo"/>
+                            <constraint firstItem="ubI-rP-jll" firstAttribute="leading" secondItem="CPM-3i-Puv" secondAttribute="leading" constant="68" id="fUJ-Tf-gPh"/>
+                            <constraint firstItem="CPM-3i-Puv" firstAttribute="trailing" secondItem="ubI-rP-jll" secondAttribute="trailing" constant="68" id="vEo-hy-NET"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="energyLevelResponseLabel" destination="vg7-5Y-5xY" id="lBi-3U-qSL"/>
+                        <outlet property="imageView" destination="bik-Bc-4fc" id="95r-V7-uPR"/>
+                        <outlet property="nameResponseLabel" destination="Wk6-4j-NZB" id="2AY-bl-qJR"/>
+                        <outlet property="temperamentResponseLabel" destination="uVc-uk-3zX" id="ChC-cG-xqx"/>
+                        <outlet property="wikipediaUrlButton" destination="ubI-rP-jll" id="dNe-nv-P0O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OyV-zr-jy8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-284.05797101449275" y="176.78571428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
